@@ -762,13 +762,17 @@
                                 >
                               </h3>
                               <h3>
-                                <span class="phone">+91 78745-32229</span>
+                                <span class="phone">+91 90238 74831 </span>
                               </h3>
                             </section>
                           </div>
                           <div class="col-sm-12 col-md-6">
                             <div class="contact-info">
-                              <form id="contactForm" class="js-form" novalidate="novalidate">
+                              <form
+                                id="contactForm"
+                                class="js-form"
+                                novalidate="novalidate"
+                              >
                                 <div class="row">
                                   <div class="form-group col-sm-6 name1">
                                     <input
@@ -834,8 +838,22 @@
     </div>
 
     <!-- Toast Message -->
-<div id="toast" style="position: fixed; bottom: 30px; right: 30px; min-width: 200px; padding: 15px 20px; background: #333; color: #fff; border-radius: 8px; display: none; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"></div>
-
+    <div
+      id="toast"
+      style="
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        min-width: 200px;
+        padding: 15px 20px;
+        background: #333;
+        color: #fff;
+        border-radius: 8px;
+        display: none;
+        z-index: 9999;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      "
+    ></div>
 
     <!-- jQuery -->
 
@@ -887,7 +905,6 @@
             // Show success message
             showToast("Thank you! Your message has been sent ✅", "#28a745");
 
-
             // Clear form
             e.target.reset();
           } catch (err) {
@@ -895,7 +912,6 @@
 
             // Show error message
             showToast("Oops! Something went wrong ❌", "#dc3545");
-
           }
         });
 
@@ -919,23 +935,25 @@
 
     <script></script>
 
-    <div id="toast" style="
-  visibility: hidden;
-  min-width: 250px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-  padding: 12px 16px;
-  position: fixed;
-  z-index: 9999;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
-  font-size: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-"></div>
-
+    <div
+      id="toast"
+      style="
+        visibility: hidden;
+        min-width: 250px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        padding: 12px 16px;
+        position: fixed;
+        z-index: 9999;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+        font-size: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      "
+    ></div>
   </body>
 </html>
